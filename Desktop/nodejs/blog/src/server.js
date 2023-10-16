@@ -11,9 +11,8 @@ const webRouter = require('./routes/web')
 // config template engine
 configViewEngine(app)
 
-
 // khai bao' route
-app.use('/test', webRouter) //neu them link '/xxx' vao thi tat ca cai route khai bao se dung sau duong link nay
+app.use('/', webRouter) //neu them link '/xxx' vao thi tat ca cai route khai bao se dung sau duong link nay
 
 
 app.listen(port, hostname, () => {
